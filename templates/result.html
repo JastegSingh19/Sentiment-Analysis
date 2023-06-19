@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Analysis - Result</title>
+    <style>
+     body {
+     color:white;
+        background-image: url('/static/sentiment-analysis.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+        .container {
+            display: flex;
+        }
+
+        .chart {
+            flex: 1;
+            margin-left: 100px;
+        }
+        th,td{
+        padding: 5px;}
+        .table {
+            font-size : 200px
+            flex: 1;
+        }
+        .score{
+        margin-right: 100px;}
+    </style>
+</head>
+<body>
+     <h1>Text Analysis - Result</h1>
+    <div class="container">
+        <div class="table">
+    <table>
+        <tr>
+            <th>Word</th>
+            <th>Count</th>
+        </tr>
+        {% for word, count in word_counts.items() %}
+        <tr>
+            <td>{{ word }}</td>
+            <td>{{ count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+            </div>
+        <div class="chart">
+            <div class="image_container">
+            <img src="data:image/png;base64,{{ plot_image }}" alt="bar">
+                </div>
+        </div>
+        <div class="score">
+            <h2>Sentiment Analysis Score:</h2>
+        {% if score.pos > score.neg %}
+            <p>Positive</p>
+        {% elif score.pos < score.neg %}
+            <p>Negative</p>
+        {% else %}
+            <p>Neutral</p>
+        {% endif %}
+        </div>
+        </div>
+
+</body>
+</html>
+
+

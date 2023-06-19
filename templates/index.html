@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Analysis</title>
+    <style>
+        body {
+        background-image: url('/static/sentiment-analysis.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+        h1{
+        color: white;
+        margin-left:47%;
+        }
+        textarea{
+        color: white;
+        background-color: #301934;
+        margin-top: 10%;
+        margin-left:40%;
+        }
+        input{
+        color: white;
+        background-color: #301934;
+        margin-left:50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 >Text Analysis</h1>
+    <form action="/" method="POST">
+        <textarea name="user_text" rows="4" cols="50" placeholder="Write the text to be analyzed"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
