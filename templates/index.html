@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Text Analysis</title>
+    <title>Youtube Text Analysis</title>
     <style>
         body {
         background-image: url('/static/sentiment-analysis.png');
@@ -10,7 +10,7 @@
 }
         h1{
         color: white;
-        margin-left:47%;
+        margin-left:40%;
         }
         textarea{
         color: white;
@@ -19,6 +19,8 @@
         margin-left:40%;
         }
         input{
+        height: 30px;
+        width: 100px;
         color: white;
         background-color: #301934;
         margin-left:50%;
@@ -27,9 +29,9 @@
 </head>
 
 <body>
-    <h1 >Text Analysis</h1>
+    <h1 >Youtube Comments Analysis</h1>
     <form action="/" method="POST">
-        <textarea name="user_text" rows="4" cols="50" placeholder="Write the text to be analyzed"></textarea><br><br>
+        <textarea name="user_text" rows="4" cols="50" placeholder="Paste the url to be analyzed"></textarea><br><br>
         <input type="submit" value="Submit">
     </form>
 </body>
