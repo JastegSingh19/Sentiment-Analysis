@@ -30,5 +30,4 @@ $ pip install -r requirements.txt
 $ python app.py
 2. Open your web browser and visit the following URL:
 http://localhost:8000/
-I will be using api calls from diffrent websites to take the reviews of a product or a post and then give it's sentiment
 Thank You!
