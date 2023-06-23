@@ -4,6 +4,8 @@
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Running the Website](#running-the-website)
+# Demo Video
+[Youtube Video Preview](https://youtu.be/o2KcglsiGAE)
 # <a name="youtube-comment-analysis"></a>Youtube Comment-Analysis
 In my project, I utilized the YouTube Data API to fetch comments from a specific video and performed text preprocessing tasks such as cleaning, tokenization, and removal of stopwords. Additionally, I integrated over 100 emojis and 520 words using Python libraries like emoji and regular expressions to identify and extract emojis and stickers from the comments. To analyze the sentiment of the comments, I employed the VADER (Valence Aware Dictionary and sEntiment Reasoner) sentiment analysis model, which provided sentiment scores including positive, negative, neutral, and compound scores. To visually represent the emotions detected in the comments, I created a bar graph highlighting the most common emotions. Finally, I developed a Flask web application that offers a user-friendly interface where users can input a YouTube video URL and retrieve sentiment analysis results.
 # <a name="flask-website"></a>Flask Website
